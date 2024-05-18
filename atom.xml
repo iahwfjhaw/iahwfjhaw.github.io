@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://iahwfjhaw.github.io</id>
+    <title>Gridea</title>
+    <updated>2024-05-18T08:33:32.565Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://iahwfjhaw.github.io"/>
+    <link rel="self" href="https://iahwfjhaw.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://iahwfjhaw.github.io/images/avatar.png</logo>
+    <icon>https://iahwfjhaw.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[模拟电路]]></title>
+        <id>https://iahwfjhaw.github.io/post/mo-ni-dian-lu/</id>
+        <link href="https://iahwfjhaw.github.io/post/mo-ni-dian-lu/">
+        </link>
+        <updated>2024-05-16T07:39:30.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="模拟电路">模拟电路</h1>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[电源大师2]]></title>
+        <id>https://iahwfjhaw.github.io/post/dian-yuan-da-shi-2/</id>
+        <link href="https://iahwfjhaw.github.io/post/dian-yuan-da-shi-2/">
+        </link>
+        <updated>2024-05-16T07:35:07.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="哈哈哈哈">哈哈哈哈</h1>
+<p>你好</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DCDC电源分类：线性电源、开关电源、电荷泵]]></title>
+        <id>https://iahwfjhaw.github.io/post/dian-yuan-da-shi/</id>
+        <link href="https://iahwfjhaw.github.io/post/dian-yuan-da-shi/">
+        </link>
+        <updated>2024-05-16T06:05:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>该文章主要讲述了线性电源芯片的工作原理、特性及使用注意事项。文章详细解释了如何通过调节接收端电压维持特定值，并介绍了特殊线性电源芯片的高输入电压特性及耗散功率计算方式。同时，强调了布局中电容的放置和芯片功能设置的重要性。此外，视频还提及了线性电源的效率问题，指出其转换过程中的能量损失。最后，介绍了无需输出电容的特殊芯片及其特性。这些内容有助于深入理解线性电源芯片的工作原理，并正确应用于实际场景中。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>该文章主要讲述了线性电源芯片的工作原理、特性及使用注意事项。文章详细解释了如何通过调节接收端电压维持特定值，并介绍了特殊线性电源芯片的高输入电压特性及耗散功率计算方式。同时，强调了布局中电容的放置和芯片功能设置的重要性。此外，视频还提及了线性电源的效率问题，指出其转换过程中的能量损失。最后，介绍了无需输出电容的特殊芯片及其特性。这些内容有助于深入理解线性电源芯片的工作原理，并正确应用于实际场景中。</p>
+<!-- more -->
+<p>今天来讲一下电源。电源的第一课，最主要是以dcdc电源为主。dcdc电源其实就分为两种，一种就是线性电源，还有一种，就是开关电源。我们来看下面这张图。<br>
+<img src="https://iahwfjhaw.github.io/post-images/1715995999755.png" alt="" loading="lazy"><br>
+dcdc，把它变换成直流，那么就是相当于是电力电子里面的斩波。dc dc电源，可以分为两类，一类叫做线性电源，一类叫做开关电源。线性电源，又分为两类，一种就是传统的，开关管是npn型的。那么传统的线性电源的压差，一般是要&gt;1.2V。比如说78系列，LM317系列，都属于是传统的线性电源。像78系列的压差，就是2.5V。LM317的压差是3V。<br>
+还有一种，就是叫做低压差的线性电源，叫做Low-Dropout线性电源，简称是LDO。LDO的压差要&lt;=1.2V。<br>
+紧接着，那就是大名鼎鼎的开关电源。开关电源其实可以分为两类。一类叫做电容式的开关电源，其实就是电荷泵。它的用途，一般用在反相。比如我把一个+5V变成-5V。或者是倍压，就是把+5V变成+10V。还有一个，是半压，比如说我可以把+5V变成+2.5V。像我们现在手机的充电器，很多就用半压式电荷泵。<br>
+接下来，再就是电感式的开关电源。电感式的开关电源，有降压型的，就是buck电路，升压型的boost电路，还有升降压的buck-boost。<br>
+斩波电路最主要就可以分为这样的两类，一类是线性电源，一类是开关电源。开关电源，又可以分为电容式的开关电源和电感式的开关电源。</p>
+<!-- more -->
+<h1 id="电源芯片公司">电源芯片公司</h1>
+<p>那么，我们来看一看一些比较有名的电源芯片公司。<br>
+<img src="https://iahwfjhaw.github.io/post-images/1715997550579.png" alt="" loading="lazy"><br>
+像美国，最有名的就是TI、ADI还有MPS这样的三家。美国还有一家是NSC，叫做国家半导体，在2011年的时候，被TI以65亿美元收购了。然后，在2016年，Linear被ADI以148亿美元收购。2020年7月13号，ADI又以209.1亿美元收购了Maxim。<br>
+在我个人来看，TI的技术要高于ADI的技术，ADI的技术高于MPS。<br>
+接下来，像我们中国的台湾省，有两家最有名的。第一家就是RICHTEK叫做台湾的立锜，第二家就是矽力杰。<br>
+那么中国大陆，最有名的就是南芯。它的一些技术人员，就是从TI里面出来的人。它的技术过于先进，对于普通DIY用户非常不友好，芯片的封装，基本上都是使用晶圆倒装。封装用的是qfn封装。<br>
+南芯芯片有几个特点。第一个特点，基本上都是用的晶圆倒装，它有很多优点。第二个，封装，基本上用的是qfn封装。对于我们普通DIY用户来说，是非常不友好的，焊接起来经常容易焊报废。<br>
+它的技术是非常先进的，在电源这一块就是约等于TI。在我心目中排第一的是TI，排第二的是南芯，排第三的是ADI，排第四的是MPS。</p>
+<!-- more -->
+<p><img src="https://iahwfjhaw.github.io/post-images/1715998779912.png" alt="" loading="lazy"><br>
+你看全球十大模拟厂商，TI排第一。它的占比在2015年的时候是18%，ADI 6%，Maxim是4%，Linear是3%。<br>
+现在，ADI和Maxim和Linear三家合并了，在2020年的时候。TI的占比到了19%，ADI是9%，Maxim是4%。</p>
+<!-- more -->
+<h1 id="线性电源">线性电源</h1>
+<p><img src="https://iahwfjhaw.github.io/post-images/1716000071234.png" alt="" loading="lazy"><br>
+首先来讲线性电源，有一个电压差称为压降，叫做Dropout Voltage。输入电压一定要&gt;我们输出电压加上压差，比如说我现在有一个7805，它的输出电压固定就是5V，它的压差最小要2.5V。如果你要用7805，那么你的输入电压至少要&gt;=7.5V。</p>
+<!-- more -->
+<h2 id="线性电源分类">线性电源分类</h2>
+<p><img src="https://iahwfjhaw.github.io/post-images/1716000324260.png" alt="" loading="lazy"><br>
+线性电源，我把它分为两类，第一个是传统的线性电源，第二个，就是低压差的线性电源。它们两个的区别最主要是看它的内部的功率管。内部的功率管可以分为双极型和MOS型两大类。<br>
+双极型，其实就是三极管型，又可以分为npn和pnp。MOS型又可以分为N沟道和P沟道。我们左上角的图是一个叫做双极型的npn，用的是达林顿管来作为功率管，它用了一个达林顿复合管，就是用两个npn组成的达林顿，那么压差就应该是=两倍的ube再加上uce，大概就2V左右。</p>
+<p>7805是2.5V。LM317它的压差是3V。要想输出电压为5V，那么它的输入电压必须要&gt;=7.5V。如果我偏不，我就给它一个6V，那么它的输出电压那就可能不是5V了，就会低于5V，可能只有4.7V。如果你想让7805的输出电压维持在5V，你的输入电压必须要&gt;7.5V。</p>
+<p>这是第一种，叫做双极型npn的，7805，LM317，都属于是这一种类型。后来技术进步了我们就把npn型的达林顿管换成了pnp型的三极管，那么它的压降就是=uce，就是=pnp型的三极管c和e之间的饱和压降，约为0.3V。</p>
+<p>比如说LM2931，它的压差就只需要是0.3V就可以工作了。除了pnp型的三极管以外，还有左下角。左上角它是两个npn组成了一个达林顿管。然后，左下角，它就是只有一个三极管。我是从TI的一本书上面摘出来的，叫做德州仪器高性能模拟器件高效应用指南这本书上面摘出来的。如果是只有一个npn型的三极管，那么它叫做准LDO。它的压降就是=ube+uce，约为1V。ube是0.7V，uce是0.3V。然后左上角是两个npn组成的达林顿管，那么就是2ube+uce。ube是0.7，那就是2×0.7+0.3。<br>
+紧接着我们来看一看右下角，右下角的功率管就换成了NMOS管。NMOS管的压降=Rds on*IL。它&lt;=0.5V。这就是我们线性电源的四功率管，最基本的就这四种。左上角就是两个npn组成的达林顿管来作为功率管，左下角就是用一个npn来作为功率管。右上角用的是pnp来作为功率管，右下角是用NMOS作为功率管。<br>
+我们除了MOS可以用来做功率管以外，我们PMOS也可以做功率管。就是这样的五种。</p>
+]]></content>
+    </entry>
+</feed>
